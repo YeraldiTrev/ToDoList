@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
         btnRemove.classList.add('btn', 'btn-danger', 'mb-1', 'ml-1');
         btnRemove.innerHTML = '<i class="fa fa-trash"></i>';
         row.children[5].appendChild(btnRemove);
-        btnRemove.onclick = function(e){
+        btnRemove.onclick = function(){
             removeToDo(row.getAttribute('id'));
         }
     }
@@ -55,5 +55,5 @@ document.addEventListener('DOMContentLoaded', function(){
     btn.onclick = function () {
         addToDo();
     }
-})
+});
 
